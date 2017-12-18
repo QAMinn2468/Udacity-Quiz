@@ -6,15 +6,15 @@ var umbrella = {
     color: "pink",
     isOpen: true,
     open: function() {
-        if (umbrella.isOpen === true) {
+        if (umbrella.isOpen) {
             return "The umbrella is already opened!";
         } else {
             umbrella.isOpen = true;
             return "Julia opens the umbrella!";
         }
     },
-    closed: function() {
-        if (umbrella.isOpen === false) {
+    close: function() {
+        if (!umbrella.isOpen) {
             return "The umbrella is already closed!";
         } else {
             umbrella.isOpen = false;
