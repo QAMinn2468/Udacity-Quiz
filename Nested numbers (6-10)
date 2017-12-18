@@ -22,11 +22,7 @@ var numbers = [
 
 for (var row = 0; row < numbers.length; row++) {
     for (var column = 0; column < numbers.length; column++) {
-        if (num %2 === 0) {
-            num = "even";
-        }else {
-            num = "odd";
-        }
-    }
+        numbers [row] [column] = numbers [row] [column] % 2 === 0? "even" : "odd";
+    }      
 }
 console.log(numbers);
