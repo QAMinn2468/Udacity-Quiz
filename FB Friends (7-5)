@@ -1,0 +1,22 @@
+/*
+ * Programming Quiz: Facebook Friends (7-5)
+ */
+
+var facebookProfile = {
+    name: "Kim",
+    friends: 53,
+    messages: ["Where does the time go?", "Certification!!! Woot!", "Not the questions I expected..."],
+    add: function postMessage(message) {
+        facebookProfile.messages.push(message);
+    },
+    minus: function deleteMessage(index) {
+        facebookProfile.message.splice(index,1);
+    },
+    increase: function addFriend() {
+        facebookProfile.friends++;
+    },
+    decrease: function removeFriend() {
+        facebookProfile.friends--;
+    }
+    
+};
