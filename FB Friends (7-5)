@@ -5,18 +5,18 @@
 var facebookProfile = {
     name: "Kim",
     friends: 53,
-    messages: ["Where does the time go?", "Certification!!! Woot!", "Not the questions I expected..."],
-    add: function postMessage(message) {
+    messages: [],
+    postMessage:function(message) {
         facebookProfile.messages.push(message);
-    },
-    minus: function deleteMessage(index) {
-        facebookProfile.message.splice(index,1);
-    },
-    increase: function addFriend() {
+        },
+    deleteMessage:function(index) {
+        facebookProfile.messages.splice(index,1);
+         },
+    addFriend:function() {
         facebookProfile.friends++;
-    },
-    decrease: function removeFriend() {
+        },
+    removeFriend:function() {
         facebookProfile.friends--;
-    }
+        }
     
 };
